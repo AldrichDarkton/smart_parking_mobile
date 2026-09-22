@@ -7,7 +7,7 @@ ParkingOverview overviewData = ParkingOverview(
   availableSpots: 12,
   isFull: false,
   zones: [
-    ParkingZone("Zone A", 25, 15, null),
-    ParkingZone("Zone B", 25, 23, null),
+    ParkingZone("Zone A", "Open-air Parking", 25, 15, null),
+    ParkingZone("Zone B", "Underground Parking", 25, 23, null),
   ],
 );

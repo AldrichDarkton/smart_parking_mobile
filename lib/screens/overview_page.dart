@@ -10,6 +10,7 @@ class OverviewPage extends StatelessWidget {
       appBar: AppBar(
         toolbarHeight: 80,
         elevation: 4,
+        backgroundColor: Colors.white,
         shadowColor: const Color.fromARGB(115, 0, 0, 0),
         surfaceTintColor: Colors.transparent,
         shape: const RoundedRectangleBorder(
