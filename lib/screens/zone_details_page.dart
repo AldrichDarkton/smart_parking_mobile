@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smart_parking_mobile/data/parking_zone.dart';
-import 'package:smart_parking_mobile/widgets/overview_widgets/zone_block.dart';
+import 'package:smart_parking_mobile/widgets/detail_widgets/zone_detail_main.dart';
 
 class ZoneDetailsPage extends StatelessWidget {
   final ParkingZone zone;
@@ -9,6 +9,7 @@ class ZoneDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         toolbarHeight: 80,
         elevation: 4,
@@ -67,7 +68,7 @@ class ZoneDetailsPage extends StatelessWidget {
           SizedBox(width: 10),
         ],
       ),
-      body: Column(children: [ZoneBlock(zone)]),
+      body: ZoneDetailMain(zone),
     );
   }
 }
